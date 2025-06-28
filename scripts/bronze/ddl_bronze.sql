@@ -1,4 +1,13 @@
-use DataWarehouse;
+/*
+===============================================================================
+DDL Script: Create Bronze Tables
+===============================================================================
+Purpose:
+    This script creates tables in the 'bronze' schema. 
+    If the tables already exist, they will be dropped and created again.
+    Run this script to reset and define the structure of the 'bronze' tables.
+===============================================================================
+*/
 
 IF OBJECT_ID ('bronze.crm_cust_info', 'U') is NOT NULL
 	DROP TABLE bronze.crm_cust_info;
